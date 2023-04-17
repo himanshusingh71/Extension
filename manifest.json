@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "My TLDR Extension",
+  "version": "1.0",
+  "description": "A Firefox extension that summarizes web pages using OpenAI.",
+  "icons": {
+    "48": "icon.jpg"
+  },
+  "browser_action": {
+    "default_title": "TLDR",
+    "default_icon": {
+      "48": "icon.jpg"
+    },
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },"permissions": ["activeTab", "tabs", "<all_urls>"]
+}
